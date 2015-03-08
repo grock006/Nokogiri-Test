@@ -1,0 +1,30 @@
+
+<% @results.each do |i| %>
+<a href="http://<%= i %>"><%= "http://" + i %></a><br>
+<% end %>
+
+<% @result_group.each do |i| %>
+<%= i %><br>
+<% end %>
+
+<br>
+<br>
+<% @hrefs.each do |i| %>
+<h1><a href="<%= i %>"><%= i %></a></h1>
+<% end %>
+
+
+
+<h1><%= @title %></h1>
+<p><%= @excerpt %></p>
+<p><%= @author %></p>
+<img src="<%= @lead_image %>" style="width:200px">
+<p><%= @url %></p>
+<p><%= @date_published %></p>
+
+<h3>Targeted Sentiment Analysis</h3>
+<%= @sentiment_results %><br>
+TYPE: <%= @type %><br>
+SCORE: <%= @score %><br>
+<br>
+<%= @content %>
